@@ -1,8 +1,11 @@
 fun main(args: Array<String>) {
 
-    fun printMultipleOf(multiplier: Int, andValue: Int) {
-        println("$multiplier * $andValue = ${multiplier * andValue}")
-    }
-    printMultipleOf(4,2)
+    fun calculateFullName(fullName: String): Pair<String, Int> {
+        return  Pair(fullName, fullName.length)
 
+    }
+    calculateFullName("Ryan W", )
 }
+
+
+
