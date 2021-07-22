@@ -1,11 +1,6 @@
-fun main(args: Array<String>) {
-
-    fun calculateFullName(fullName: String): Pair<String, Int> {
-        return  Pair(fullName, fullName.length)
-
-    }
-    calculateFullName("Ryan W", )
+fun main(args: Array<String>){
+fun printMultipleOf(multplier: Int, value: Int = 1){
+    println("$multplier * $value = ${multplier * value}")
 }
-
-
-
+    printMultipleOf(4)
+}
