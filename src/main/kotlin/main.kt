@@ -1,7 +1,10 @@
 fun main(args: Array<String>) {
-  fun add (a:Int, b:Int): Int{
-      return a + b
-  }
-    var function = ::add
-    function(4,2)
+var myFavouriteSong: String?
+myFavouriteSong = "I spy "
+    myFavouriteSong = null
+
+val parsedInt: Int ?
+parsedInt = "10".toIntOrNull();
+
+
 }
