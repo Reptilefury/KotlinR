@@ -1,10 +1,14 @@
 fun main(args: Array<String>) {
-var myFavouriteSong: String?
-myFavouriteSong = "I spy "
-    myFavouriteSong = null
+    var authorName: String? = null
+    var nameLength = authorName?.length
+    var nonNullableAuthor = authorName
+    var nullableInt: Int? = 10
+    var mustHaveResult = nullableInt ?: 0
 
-val parsedInt: Int ?
-parsedInt = "10".toIntOrNull();
 
-
+    println("Author's name has length $nameLength")
+    authorName?.let {
+        nameLength = authorName.length
+    }
+    println(mustHaveResult)
 }
