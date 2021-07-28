@@ -1,0 +1,24 @@
+package com.example.notekeeper
+
+import NoteInfo
+import CourseInfo
+
+class DataManager {
+    val courses = HashMap<String, CourseInfo>()
+    val notes  = ArrayList<NoteInfo>()
+    init{
+        initializeCourses()
+    }
+   private fun initializeCourses(){
+        var course = CourseInfo("Android_Intents", "Android Programming with intents")
+       courses.set(course.courseId, course)
+       course = CourseInfo("Android_async", "android async Programming and services")
+       courses.set(course.courseId, course)
+       course = CourseInfo("Java_lang","Java fundamentals: The Java language", )
+       courses.set(course.courseId, course)
+       course = CourseInfo("java_core", "Java: Fundamentals: The core platform")
+       courses.set(course.courseId, course)
+
+    }
+
+}
