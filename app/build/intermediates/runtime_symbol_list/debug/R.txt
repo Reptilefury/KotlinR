@@ -2121,7 +2121,7 @@ int id snap 0x7f080159
 int id snapMargins 0x7f08015a
 int id spacer 0x7f08015b
 int id special_effects_controller_view_tag 0x7f08015c
-int id spinner4 0x7f08015d
+int id spinnerCourses 0x7f08015d
 int id spline 0x7f08015e
 int id split_action_bar 0x7f08015f
 int id spread 0x7f080160

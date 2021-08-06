@@ -29,20 +29,22 @@
         android:gravity="start|top"
         android:hint="Note text"
         android:inputType="textMultiLine"
-        app:layout_constraintEnd_toEndOf="@+id/spinner4"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerCourses"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/spinner4"
+        app:layout_constraintStart_toStartOf="@+id/spinnerCourses"
         app:layout_constraintTop_toBottomOf="@+id/textNoteTitle" />
 
     <Spinner
-        android:id="@+id/spinner4"
+        android:id="@+id/spinnerCourses"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="55dp" />
+        app:layout_constraintTop_toTopOf="@+id/nav_host_fragment_content_main" />
 
     <EditText
         android:id="@+id/textNoteTitle"
@@ -53,8 +55,8 @@
         android:gravity="start|top"
         android:hint="Note title"
         android:inputType="textMultiLine"
-        app:layout_constraintEnd_toEndOf="@+id/spinner4"
-        app:layout_constraintStart_toStartOf="@+id/spinner4"
-        app:layout_constraintTop_toBottomOf="@+id/spinner4" />
+        app:layout_constraintEnd_toEndOf="@+id/spinnerCourses"
+        app:layout_constraintStart_toStartOf="@+id/spinnerCourses"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCourses" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

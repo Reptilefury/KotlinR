@@ -20,7 +20,7 @@ public final class ContentMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Spinner spinner4;
+  public final Spinner spinnerCourses;
 
   @NonNull
   public final EditText textNoteText;
@@ -28,10 +28,10 @@ public final class ContentMainBinding implements ViewBinding {
   @NonNull
   public final EditText textNoteTitle;
 
-  private ContentMainBinding(@NonNull ConstraintLayout rootView, @NonNull Spinner spinner4,
+  private ContentMainBinding(@NonNull ConstraintLayout rootView, @NonNull Spinner spinnerCourses,
       @NonNull EditText textNoteText, @NonNull EditText textNoteTitle) {
     this.rootView = rootView;
-    this.spinner4 = spinner4;
+    this.spinnerCourses = spinnerCourses;
     this.textNoteText = textNoteText;
     this.textNoteTitle = textNoteTitle;
   }
@@ -63,9 +63,9 @@ public final class ContentMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.spinner4;
-      Spinner spinner4 = rootView.findViewById(id);
-      if (spinner4 == null) {
+      id = R.id.spinnerCourses;
+      Spinner spinnerCourses = rootView.findViewById(id);
+      if (spinnerCourses == null) {
         break missingId;
       }
 
@@ -81,7 +81,7 @@ public final class ContentMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ContentMainBinding((ConstraintLayout) rootView, spinner4, textNoteText,
+      return new ContentMainBinding((ConstraintLayout) rootView, spinnerCourses, textNoteText,
           textNoteTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);

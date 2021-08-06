@@ -29,7 +29,13 @@ class MainActivity : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration(navController.graph)
         setupActionBarWithNavController(navController, appBarConfiguration)
         val dm = DataManager()
-        val adapterCourses = ArrayAdapter
+        val adapterCourses = ArrayAdapter<CourseInfo>(
+            this,
+            android.R.layout.simple_spinner_item,
+            dm.courses.values.toList()
+        )
+        adapterCourses.setDropDownViewResource(android.R.layout.simple_spinner_item)
+        spinnerCourses.adapter = adapterCourses
 
     }
 
